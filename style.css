@@ -1,0 +1,284 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #5a4a3a; /* Dark Brown */
+    background-color: #fdfbf5; /* Very Light Cream */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #4a3b2e; /* Dark Brown */
+    font-family: 'Georgia', Times, serif; /* Elegant Serif for Law look */
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #7b6a5a; /* Accent Brown */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* En-tête */
+header {
+    background-color: #4a3b2e; /* Dark Brown */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: #5a4a3a; /* Slightly lighter Dark Brown */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #7b6a5a; /* Accent Brown */
+    text-decoration: none;
+}
+
+/* Section Hero (principale) */
+.hero {
+    background-color: #8c7b60; /* Light Brown */
+    color: #fdfbf5; /* Very Light Cream for text on hero */
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block; /* Keep for btn-small too */
+    background-color: #7b6a5a; /* Accent Brown */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover { /* Keep for btn-small too */
+    background-color: #6a5b4a; /* Darker Accent Brown */
+    text-decoration: none;
+}
+
+/* Section Services */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 250px;
+    font-weight: bold;
+    color: #4a3b2e; /* Dark Brown */
+}
+
+/* Styles for About Us page */
+.about-us {
+    padding: 60px 0;
+}
+
+.about-us h2, .about-us h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Styles for Job Listings page */
+.job-listings {
+    padding: 60px 0;
+}
+
+.job-listings h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-listings > p { /* Target the paragraph directly under job-listings */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.job-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+}
+
+.job-item h3 {
+    color: #4a3b2e; /* Dark Brown */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.job-item p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.job-item p strong {
+    color: #7b6a5a; /* Accent Brown */
+}
+
+.btn-small {
+    background-color: #7b6a5a; /* Accent Brown */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-small:hover {
+    background-color: #6a5b4a; /* Darker Accent Brown */
+    text-decoration: none;
+}
+
+/* Styles for Contact page */
+.contact-form-section {
+    padding: 60px 0;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-section > p { /* Target the paragraph directly under contact-form-section */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #4a3b2e; /* Dark Brown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Form Card (reused from previous example, adapted for new colors) */
+.form-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px; /* Wider form card */
+    margin: 0 auto; /* Center the form card */
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #5a4a3a; /* Dark Brown */
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d4c9b0; /* Medium Beige/Tan for borders */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5a4a3a;
+}
+
+.form-card input[type="text"]:focus,
+.form-card input[type="email"]:focus,
+.form-card textarea:focus {
+    border-color: #7b6a5a; /* Accent Brown on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(123, 106, 90, 0.5);
+}
+
+.form-card textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-card .btn { /* Reuse existing .btn style for form button */
+    width: 100%;
+    margin-top: 10px;
+}
